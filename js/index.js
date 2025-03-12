@@ -34,7 +34,7 @@ let doms = {
     container: document.querySelector(".container"),
 };
 let lrcObj_array = parseLrc();
-console.log(lrcObj_array);
+// console.log(lrcObj_array);
 /**
  * @description 查找当前时间对应的歌词索引
  */
@@ -64,7 +64,7 @@ let containerHeight = doms.container.clientHeight;
 let li_height = doms.ul.children[0].clientHeight;
 //最大偏移量
 let maxOffset = doms.ul.clientHeight - containerHeight;
-console.log(containerHeight, li_height, maxOffset);
+// console.log(containerHeight, li_height, maxOffset);
 function setOffset() {
     let index = findIndex();
     let offset = li_height * index + li_height / 2 - containerHeight / 2;
